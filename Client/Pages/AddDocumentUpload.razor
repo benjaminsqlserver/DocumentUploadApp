@@ -1,0 +1,19 @@
+@page "/add-document-upload"
+
+<PageTitle>Add DocumentUpload</PageTitle>
+    <div class="container-fluid">
+    <div class="row px-3">
+       
+      
+       
+        <div class="col-md-6 p-3">
+            <RadzenCard>
+                <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Multiple files upload</RadzenText>
+                <RadzenUpload Multiple="true" Url="upload/multiple" Progress=@(args => OnProgress(args, "Multiple files upload")) class="w-100" InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "select file" }})" />
+            </RadzenCard>
+        </div>
+        
+    </div>
+</div>
+
+
